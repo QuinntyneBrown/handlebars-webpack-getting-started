@@ -1,0 +1,6 @@
+{
+  "globalDependencies": {
+    "handlebars": "registry:dt/handlebars#3.0.3+20160317120654",
+    "require": "registry:dt/require#2.1.20+20160316155526"
+  }
+}
