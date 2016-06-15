@@ -1,3 +1,4 @@
+var handlebarsWebpackGettingStarted =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -44,10 +45,19 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
 	var source = __webpack_require__(1);
-	var div = document.createElement("DIV");
-	div.innerHTML = Handlebars.compile(source)({ name: "Handlebars and Webpack Getting Started" });
-	document.body.appendChild(div);
+	var HelloWorld = (function () {
+	    function HelloWorld() {
+	        this.init = function () {
+	            var div = document.createElement("DIV");
+	            div.innerHTML = Handlebars.compile(source)({ name: "Handlebars and Webpack Getting Started" });
+	            document.body.appendChild(div);
+	        };
+	    }
+	    return HelloWorld;
+	}());
+	exports.HelloWorld = HelloWorld;
 
 
 /***/ },
