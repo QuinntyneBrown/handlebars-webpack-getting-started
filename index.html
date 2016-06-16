@@ -6,14 +6,14 @@
 </head>
 <body>
 
+    <div id="card-component"></div>
+
     <script src="node_modules/handlebars/dist/handlebars.js"></script>
     <script src="dist/app.js"></script>
+    
     <script type="text/javascript">
-
-        var helloWorld = new handlebarsWebpackGettingStarted.HelloWorld();
-
-        helloWorld.init();
-        
+        new handlebarsWebpackGettingStarted
+            .CardComponent(document.getElementById("card-component"),"Handle Bars Webpack Getting Started");
     </script>
 </body>
 </html>
